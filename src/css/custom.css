@@ -1,23 +1,20 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global Styles with Vazir font
  */
 
 @import "@fontsource/vazir/index.css";
 
-
 :root {
-  --ifm-color-primary: #4159ec; 
-  --ifm-color-primary-dark: #3247d1; 
-  --ifm-color-primary-darker: #2b3fb8; 
+  --ifm-color-primary: #4159ec;
+  --ifm-color-primary-dark: #3247d1;
+  --ifm-color-primary-darker: #2b3fb8;
   --ifm-color-primary-darkest: #222f8a;
   --ifm-color-primary-light: #5f73f0;
   --ifm-color-primary-lighter: #7b8cf4;
   --ifm-color-primary-lightest: #a8b6f9;
 
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.08);
   --ifm-font-family-base: Vazir, system-ui, -apple-system, Segoe UI, Roboto,
     Ubuntu, Cantarell, Noto Sans, sans-serif;
 }
@@ -31,19 +28,31 @@
   --ifm-color-primary-lighter: #a8b6f9;
   --ifm-color-primary-lightest: #c9d1fb;
 
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+
+  /* Softer text for dark mode */
+  --ifm-font-color-base: #d1d5db; /* Tailwind gray-300 */
+  --ifm-heading-color: #f3f4f6;   /* Tailwind gray-100 */
+  --ifm-link-color: #93c5fd;      /* Softer blue for links */
 }
 
-
-/* Custom Footer Styles */
+/* =======================
+   Footer Styles
+======================= */
 a[href^="http"] svg {
   display: none !important;
+}
+
+.footer {
+  background-color: #1f2937; /* Tailwind gray-800 */
+  color: #e5e7eb;           /* Tailwind gray-200 */
+  padding: 2rem 1rem;
 }
 
 .footer a {
   font-family: "Vazir", sans-serif;
   font-size: 14px;
-  color: #e0e0e0;
+  color: #d1d5db; /* Tailwind gray-300 */
   text-decoration: none;
   transition: all 0.2s ease-in-out;
   padding: 3px 6px;
@@ -56,9 +65,9 @@ a[href^="http"] svg {
   text-decoration: none;
 }
 
-/*
-Introduction Documentation Boxes
-*/
+/* =======================
+   Documentation Boxes
+======================= */
 .doc-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -67,18 +76,29 @@ Introduction Documentation Boxes
 
 .doc-box {
   flex: 1 1 calc(33% - 16px);
-  background-color: #f4f4f4;
+  background-color: #f9fafb; /* light gray */
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
-  color: black;
+  color: #111827;
   min-width: 200px;
   transition: transform 0.2s, background-color 0.2s;
+  border: 1px solid #e5e7eb;
 }
 
 .doc-box:hover {
   transform: translateY(-4px);
-  background-color: #e0e0e0;
+  background-color: #f3f4f6;
+}
+
+[data-theme="dark"] .doc-box {
+  background-color: #1f2937; /* Tailwind gray-800 */
+  border: 1px solid #374151; /* Tailwind gray-700 */
+  color: #e5e7eb;            /* Tailwind gray-200 */
+}
+
+[data-theme="dark"] .doc-box:hover {
+  background-color: #374151; /* Tailwind gray-700 */
 }
 
 .doc-box-title {
@@ -89,5 +109,9 @@ Introduction Documentation Boxes
 
 .doc-box-desc {
   font-size: 14px;
-  color: #555;
+  color: #6b7280; /* Tailwind gray-500 */
+}
+
+[data-theme="dark"] .doc-box-desc {
+  color: #9ca3af; /* Tailwind gray-400 */
 }
