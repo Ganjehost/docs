@@ -1,0 +1,93 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+@import "@fontsource/vazir/index.css";
+
+
+:root {
+  --ifm-color-primary: #4159ec; 
+  --ifm-color-primary-dark: #3247d1; 
+  --ifm-color-primary-darker: #2b3fb8; 
+  --ifm-color-primary-darkest: #222f8a;
+  --ifm-color-primary-light: #5f73f0;
+  --ifm-color-primary-lighter: #7b8cf4;
+  --ifm-color-primary-lightest: #a8b6f9;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: Vazir, system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #7487f5;
+  --ifm-color-primary-dark: #5f73f0;
+  --ifm-color-primary-darker: #4c60e6;
+  --ifm-color-primary-darkest: #3b4ed1;
+  --ifm-color-primary-light: #8ea0f8;
+  --ifm-color-primary-lighter: #a8b6f9;
+  --ifm-color-primary-lightest: #c9d1fb;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Custom Footer Styles */
+a[href^="http"] svg {
+  display: none !important;
+}
+
+.footer a {
+  font-family: "Vazir", sans-serif;
+  font-size: 14px;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+/*
+Introduction Documentation Boxes
+*/
+.doc-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.doc-box {
+  flex: 1 1 calc(33% - 16px);
+  background-color: #f4f4f4;
+  padding: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+  min-width: 200px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.doc-box:hover {
+  transform: translateY(-4px);
+  background-color: #e0e0e0;
+}
+
+.doc-box-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.doc-box-desc {
+  font-size: 14px;
+  color: #555;
+}
