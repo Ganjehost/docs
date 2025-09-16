@@ -29,6 +29,12 @@ const sidebars = {
       items: [
         "accounts/accountsRegisterAndLogin",
         "accounts/accountsEmailVerfication",
+        "accounts/accountsCart",
+        "accounts/accountsInvoices",
+        "accounts/accountsSupportTicket",
+        "accounts/accountsChangePassword",
+        "accounts/accountsChangeInformation",
+        "accounts/accountsServiceTransfer",        
       ],
     },
   ],
