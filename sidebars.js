@@ -26,7 +26,10 @@ const sidebars = {
       type: "category",
       label: "پنل کاربری",
       link: { type: "doc", id: "accounts/accountsIntro" },
-      items: ["accounts/accountsRegisterAndLogin"],
+      items: [
+        "accounts/accountsRegisterAndLogin",
+        "accounts/accountsEmailVerfication",
+      ],
     },
   ],
 };
