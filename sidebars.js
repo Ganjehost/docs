@@ -34,7 +34,34 @@ const sidebars = {
         "accounts/accountsSupportTicket",
         "accounts/accountsChangePassword",
         "accounts/accountsChangeInformation",
-        "accounts/accountsServiceTransfer",        
+        "accounts/accountsServiceTransfer",
+      ],
+    },
+
+    // Servers
+    {
+      type: "category",
+      label: "سرور ها",
+      link: { type: "doc", id: "servers/serversIntro" },
+      items: [
+        {
+          type: "category",
+          label: "سرور اختصاصی",
+          link: { type: "doc", id: "servers/dedicated/serversDedicatedIntro" },
+          items: [],
+        },
+        {
+          type: "category",
+          label: "سرور ابری",
+          link: { type: "doc", id: "servers/cloud-server/serversCloudIntro" },
+          items: [],
+        },
+        {
+          type: "category",
+          label: "سرور مجازی",
+          link: { type: "doc", id: "servers/vps/serversVpsIntro" },
+          items: [],
+        },
       ],
     },
   ],
