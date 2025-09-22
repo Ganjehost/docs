@@ -48,18 +48,60 @@ const sidebars = {
           type: "category",
           label: "سرور اختصاصی",
           link: { type: "doc", id: "servers/dedicated/serversDedicatedIntro" },
-          items: [],
+          items: [
+            "servers/dedicated/serversDedicatedOrder",
+            "servers/dedicated/serversDedicatedOS",
+            "servers/dedicated/serversDedicatedConsole",
+            "servers/dedicated/serversDedicatedExtraIP",
+            "servers/dedicated/serversDedicatedTraffic",
+            "servers/dedicated/serversDedicatedDatacenters",
+          ],
         },
         {
           type: "category",
           label: "سرور ابری",
           link: { type: "doc", id: "servers/cloud-server/serversCloudIntro" },
-          items: [],
+          items: [
+            "servers/cloud-server/serversCloudInfo",
+            "servers/cloud-server/serversCloudResources",
+            "servers/cloud-server/serversCloudBandwidth",
+            "servers/cloud-server/serversCloudConsole",
+            "servers/cloud-server/serversCloudUpgrade",
+            "servers/cloud-server/serversCloudChangeIP",
+            "servers/cloud-server/serversCloudReinstallOS",
+          ],
         },
         {
           type: "category",
           label: "سرور مجازی",
           link: { type: "doc", id: "servers/vps/serversVpsIntro" },
+          items: [],
+        },
+      ],
+    },
+
+    // Hosts
+    {
+      type: "category",
+      label: "هاست ها",
+      link: { type: "doc", id: "hosts/hostsIntro" },
+      items: [
+        {
+          type: "category",
+          label: "هاست اشتراکی",
+          link: { type: "doc", id: "hosts/shared/hostsSharedIntro" },
+          items: [],
+        },
+        {
+          type: "category",
+          label: "هاست دانلود",
+          link: { type: "doc", id: "hosts/download/hostsDownloadIntro" },
+          items: [],
+        },
+        {
+          type: "category",
+          label: "هاست ایمیل",
+          link: { type: "doc", id: "hosts/email/hostsEmailIntro" },
           items: [],
         },
       ],
